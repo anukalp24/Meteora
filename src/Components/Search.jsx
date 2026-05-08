@@ -77,7 +77,7 @@ const Search = ({history , sethistory , error}) => {
                   </div>
                   )}
 
-{data &&(
+{history &&(
   <>
   
 
