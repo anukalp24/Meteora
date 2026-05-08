@@ -1,16 +1,26 @@
-# React + Vite
+Meteora 🌩️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Meteora is a modern React-based weather application that provides real-time weather forecasts, air quality updates, and geolocation-based weather detection using REST APIs from Open-Meteo. The app delivers an immersive and responsive weather experience with dynamic UI themes that adapt according to live weather conditions.
 
-Currently, two official plugins are available:
+Features ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+. Real-time weather forecasting
+. 5-day weather forecast support
+. 24-hour hourly weather chart
+. Air Quality Index (AQI) monitoring
+. Geolocation-based weather detection
+. Dynamic weather-themed gradients
+. Responsive desktop & mobile layouts
+. Search history with delete functionality
+. LocalStorage persistence
+. React Context API state management
+. Glassmorphism-inspired modern UI
 
-## React Compiler
+Tech Stack 🛠️
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+. React.js
+. React Router DOM
+. Context API
+. REST APIs
+. CSS3
+. Open-Meteo API
