@@ -46,19 +46,14 @@ const navigate = useNavigate()
             {error && (
               <div className="error-box">
                 <div className="invalid-input">{error}</div>
-      
               </div>
             )}
-      </div>
 
 {loader &&(
   <div className="loader">
   <span id="loading">{loader}</span>
 </div>
   )}
-
-
-
 
   {navigationLoader &&(
     <div className="navigation-loader-box">
@@ -71,6 +66,7 @@ const navigate = useNavigate()
     </div>
   )}
 
+  </div>
 
 
 

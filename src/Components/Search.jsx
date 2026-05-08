@@ -67,6 +67,7 @@ const Search = ({history , sethistory , error}) => {
 {error &&(
    <div className="error-box-2">
                 <div className="invalid-input">{error}</div>
+
               </div>
 )}
 
@@ -78,7 +79,9 @@ const Search = ({history , sethistory , error}) => {
 
 {data &&(
   <>
-  <div className="container-parent-2">
+  
+
+    <div className="container-parent-2">
     
   {history?.map((value , index)=>{
     let [icon , text , gradient] = GetImg(value?.weather?.current.weathercode)
@@ -122,8 +125,10 @@ const Search = ({history , sethistory , error}) => {
       </div>
     </div>
     )
-})}
+  })}
      </div>
+
+
 
   </>
 )}

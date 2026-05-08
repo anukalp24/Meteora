@@ -9,7 +9,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  // localStorage.clear()
   const [error, seterror] = useState("");
   const [city, setcity] = useState("");
   const [loader, setloader] = useState(false)
