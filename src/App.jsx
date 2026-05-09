@@ -295,11 +295,11 @@ return final;
   if ([99].includes(code)) return ["⛈️", "Heavy thunderstorm with hail"  ,"linear-gradient(180deg, #1a1c22 0%, #0f1116 100%)" ];
   }
 
-  let img
-  let text
-  let gradient=  data?.weather?.current?.weathercode 
+  let img = ""
+  let text = ""
+  let gradient=  ""
 data?.weather?.current &&(
-  [img , text , gradient]  = GetImg(gradient)
+  [img , text , gradient]  = GetImg(data.weather.current.weathercode)
 ) 
 
 
@@ -333,9 +333,6 @@ data?.weather?.current &&(
     <Route path='/search' element={<Search history={history} sethistory={sethistory} error={error}/>}/>
     </Routes>
 
-
-
-    
     </Data.Provider>
 </BrowserRouter>
     </>

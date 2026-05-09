@@ -15,7 +15,7 @@ body {
 
 
 
-/* Wrapper (important for positioning) */
+
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -29,7 +29,6 @@ body {
   z-index: 0;
 }
 
-/* Ensure app content stays above stars */
 .wrapper > *:not(.stars) {
   position: relative;
   z-index: 1;

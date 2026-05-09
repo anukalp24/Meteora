@@ -17,7 +17,7 @@ return(
     </div>
 
   {data?.weather?.daily?.time.map((day, index) => {
-    const code = data.weather.daily.weathercode[index];
+    const code = data?.weather?.daily.weathercode[index];
     let [icon , text] = Getforecastimg(code)
     const dayName = new Date(day).toLocaleDateString("en-US", {
   weekday: "short"
