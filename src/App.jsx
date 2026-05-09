@@ -203,7 +203,9 @@ return final;
     else {
       setloader(true)
      let result = await weatherdata(city);
-     sethistory([... history , result])
+     if(result){
+       sethistory([... history , result])
+      }
       setloader(false)
       setcity("");
     }
