@@ -84,8 +84,6 @@ const CustomTooltip = ({ active, payload }) => {
             </div>
     </div>
 
-  
-
 
 <div className="more-info">
 <>

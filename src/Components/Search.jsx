@@ -81,9 +81,8 @@ const Search = ({history , sethistory , error}) => {
   
 
     <div className="container-parent-2">
-    
   {history?.map((value , index)=>{
-    let [icon , text , gradient] = GetImg(value?.weather?.current.weathercode)
+    let [icon , text , gradient] = GetImg(value?.weather?.current?.weathercode)
     return(
       <div style={{background: gradient}} key={index} className="container">
       <div className="sec-1">

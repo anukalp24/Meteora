@@ -30,10 +30,6 @@ function App() {
     localStorage.setItem("history" , JSON.stringify(history))
     }, [history])
 
-
-
-
-
   const [Aqi, setAqi] = useState(()=>{
   let saved = localStorage.getItem("aqi")
   if(saved){
@@ -167,6 +163,7 @@ let secondapi =  await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${
 `&forecast_days=5&timezone=auto`)
 let secondresult = await secondapi.json()
 
+
 const final = {
   location: result.results[0],
   weather: secondresult
@@ -295,11 +292,16 @@ return final;
   if ([96].includes(code)) return ["⛈️", "Thunderstorm with hail" , "linear-gradient(180deg, #2a3142 0%, #161b26 100%)"];
 
   if ([99].includes(code)) return ["⛈️", "Heavy thunderstorm with hail"  ,"linear-gradient(180deg, #1a1c22 0%, #0f1116 100%)" ];
+
+     return ["🌤️", "Clear sky", "linear-gradient(180deg, #4f7dbf 0%, #7d8da1 100%)"];
   }
+
+
 
   let img = ""
   let text = ""
   let gradient=  ""
+  
 data?.weather?.current &&(
   [img , text , gradient]  = GetImg(data.weather.current.weathercode)
 ) 
